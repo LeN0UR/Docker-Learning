@@ -1,4 +1,4 @@
-v# Docker Learning Journey 🚀
+ Docker Learning Journey 🚀
 
 This repo is where I’ve been experimenting and learning the basics of Docker and Docker Compose.  
 It started with just trying to run a simple Flask app, but along the way I ended up learning a lot more than I expected.
@@ -7,10 +7,7 @@ It started with just trying to run a simple Flask app, but along the way I ended
 When I first started, I just wanted to get a Flask app running in a container.  
 Pretty quickly, I ran into all sorts of issues — from forgetting to rebuild images, to mixing up ports, to installing dependencies in the wrong place. The biggest headache was the classic error: ModuleNotFoundError: No module named 'flask'
 
-df
-
-
-At first, I thought something was broken with Docker itself, but in reality I just wasn’t rebuilding properly after changing my Dockerfile. Small mistakes (like accidentally typing `From flask import Flask` instead of `from flask import Flask`) wasted more time than I’d like to admit 😅.
+At first, I thought something was broken with Docker itself, but in reality I just wasn’t rebuilding properly after changing my Dockerfile. Small mistakes (like accidentally typing From flask import Flask instead of `from flask import Flask`) wasted more time than I’d like to admit 😅.
 
 Eventually, I learned how to:
 - Write a **Dockerfile** that installs Flask and Redis properly.
@@ -26,14 +23,14 @@ Eventually, I learned how to:
 - Debugging containers when things break
 - Using Git with remote repos (including fixing mistakes)
 
+## Challenges Faced
+- Accidentally misnaming imports (`From flask import Flask` instead of `from flask import Flask`)
+- Forgetting to rebuild containers after editing the Dockerfile
+- Encountering the error:
+
 ## Next Steps
 Now that I’ve got the basics down, I want to go further:
 - Learn how to use **Kubernetes** for orchestration.
 - Set up a **CI/CD pipeline** so builds and deployments are automated.
 - Improve image sizes and security best practices.
 
----
-
-### Author
-👤 GitHub: [LeN0UR](https://github.com/LeN0UR)  
-📦 Repo: [Docker-Learning](https://github.com/LeN0UR/Docker-Learning)
